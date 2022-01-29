@@ -40,8 +40,8 @@ main.o : main.c
 	gcc $(FLAGS) $(FPIC) -O2 -I$(INCLUDE) $<
 # gcc $(FLAGS) $(FPIC) -I$(INCLUDE) $<
 
-clear:
+clean:
 	$(RM) *.o
 	$(RM) main_c.dll
 
-.PHONY : clear all
+.PHONY : clean all
