@@ -25,7 +25,7 @@ else
 	MAKER = make
 	RM = rm
 	SHAREDEXTENSIONS = so
-	LUADLL = lua-5.1.5/src/*.o
+	LUADLL=
 endif 
 
 all: $(SRC)
