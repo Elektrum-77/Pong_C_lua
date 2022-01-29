@@ -44,6 +44,12 @@ ifeq ($(OS), Windows_NT)
 else
 	cd .$(PATHSEP)src && $(ZIP) Pong.love main.lua
 	$(MV) .$(PATHSEP)src$(PATHSEP)Pong.love .$(PATHSEP)Pong.love
+endif
+
+run :
+ifeq ($(OS), Windows_NT)
+	echo "debrouille toi c'est facile"
+else 
 	.$(PATHSEP)love-11.4-x86_64.AppImage Pong.love
 endif
 
