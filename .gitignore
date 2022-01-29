@@ -1,1 +1,5 @@
-/Makefile copy
+/*.o
+/*/main_c.*
+/Pong.love
+
+
