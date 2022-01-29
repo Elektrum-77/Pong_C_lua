@@ -30,7 +30,6 @@ endif
 
 all: $(SRC)
 	gcc $(FLAGS) -shared -fpic $(LUADLL) $(OBJECT) -o main_c.$(SHAREDEXTENSIONS)
-	$(RM) *.o
 
 main.o : main.c
 	gcc $(FLAGS) $(FPIC) -I$(INCLUDE) $<
