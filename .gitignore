@@ -1,5 +1,6 @@
-/*.o
-/*/main_c.*
+*.o
+main_c.*
+lua51.dll
 /Pong.love
 
 

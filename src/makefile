@@ -20,7 +20,7 @@ ifeq ($(OS), Windows_NT)
 	MAKER = mingw32-make.exe
 	RM = del
 	SHAREDEXTENSIONS = dll
-	LUADLL = lua51.dll
+	LUADLL = lua-5.1.5\src\lua51.dll
 else
 	MAKER = make
 	RM = rm

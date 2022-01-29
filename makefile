@@ -40,7 +40,7 @@ ifeq ($(OS), Windows_NT)
 	$(RM) .$(PATHSEP)lua51.dll
 	$(CP) .$(PATHSEP)src$(PATHSEP)main.lua .
 	$(CP) .$(PATHSEP)src$(PATHSEP)main_c.dll .
-	$(CP) .$(PATHSEP)src$(PATHSEP)lua51.dll .
+	$(CP) .$(PATHSEP)src$(PATHSEP)lua-5.1.5$(PATHSEP)src$(PATHSEP)lua51.dll .
 else
 	cd .$(PATHSEP)src && $(ZIP) Pong.love main.lua
 	$(MV) .$(PATHSEP)src$(PATHSEP)Pong.love .$(PATHSEP)Pong.love
