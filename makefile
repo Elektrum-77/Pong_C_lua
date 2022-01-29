@@ -57,9 +57,7 @@ ifeq ($(OS), Windows_NT)
 	$(RM) ".$(PATHSEP)src$(PATHSEP)main_c.dll"
 	$(RM) ".$(PATHSEP)src$(PATHSEP)lua51.dll"
 else
-	cd .$(PATHSEP)src && $(ZIP) Pong.love main.lua
-	$(MV) ".$(PATHSEP)src$(PATHSEP)Pong.love" ".$(PATHSEP)Pong.love"
-	.$(PATHSEP)love-11.4-x86_64.AppImage Pong.love
+	$(RM) "./Pong.love"
 endif
 
-.PHONY : clear all
+.PHONY : clean all
