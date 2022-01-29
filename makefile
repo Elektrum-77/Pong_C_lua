@@ -5,16 +5,17 @@
 # # value for windows : dl
 # RM = rm
 
-PLATFORM = mingw
 
 ifeq ($(OS), Windows_NT)
 	MAKER = mingw32-make.exe
+	PLATFORM = mingw
 	CP = copy
 	MV = move
 	RM = del
 	PATHSEP=\\
 	ZIP = powershell Compress-Archive
 else
+	PLATFORM = linux
 	MAKER = make
 	CP = cp
 	MV = mv
