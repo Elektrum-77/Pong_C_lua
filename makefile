@@ -44,7 +44,6 @@ ifeq ($(OS), Windows_NT)
 else
 	cd .$(PATHSEP)src && $(ZIP) Pong.love main.lua
 	$(MV) .$(PATHSEP)src$(PATHSEP)Pong.love .$(PATHSEP)Pong.love
-	chmod 777 
 	.$(PATHSEP)love-11.4-x86_64.AppImage Pong.love
 endif
 
