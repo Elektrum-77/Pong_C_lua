@@ -1,0 +1,18 @@
+{
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.workspace.library": [
+        "${3rd}/love2d/library"
+    ],
+    "Lua.workspace.checkThirdParty": false,
+    "files.associations": {
+        "jumper.h": "c",
+        "math.h": "c",
+        "lauxlib.h": "c",
+        "random": "c",
+        "ball.h": "c",
+        "string_view": "c",
+        "lualib.h": "c",
+        "game.h": "c",
+        "goal.h": "c"
+    }
+}
