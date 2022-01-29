@@ -41,6 +41,6 @@ main.o : main.c
 
 clean:
 	$(RM) *.o
-	$(RM) main_c.dll
+	$(RM) main_c.*
 
 .PHONY : clean all
