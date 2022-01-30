@@ -3,8 +3,6 @@
 
 typedef struct ball
 {
-    void (*IncPlayer1Score)(void);
-    void (*IncPlayer2Score)(void);
     double spawn_x, spawn_y;
     double x, y, vx, vy;
     double radius;

@@ -56,8 +56,6 @@ int InitGameLua(lua_State *L)
     Pad_Init(&PAD1, GAME_BORDER.left, y - pad_length / 2, pad_length);
     Pad_Init(&PAD2, GAME_BORDER.right, y - pad_length / 2, pad_length);
 
-    BALL.IncPlayer1Score = &IncPlayer1Score;
-    BALL.IncPlayer2Score = &IncPlayer2Score;
     Ball_Init(&BALL, x, y, 0, 0, ball_size);
 
     Game_Init(&GAME, &GOAL1, &GOAL2, &SCORE1, &SCORE2, &PAD1, &PAD2, &BALL, &GAME_CONFIG, &GAME_BORDER, GAME_CONFIG.pad_speed, GAME_CONFIG.ball_speed, GAME_BORDER.left, GAME_BORDER.right, GAME_BORDER.up, GAME_BORDER.down);

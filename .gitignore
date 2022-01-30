@@ -2,8 +2,10 @@
 *.a
 *.exe
 lua
+# lua.exe
+# luac.exe
 main_c.*
-lua51.dll
+# lua51.dll
 /Pong.love
 /main.lua
 
