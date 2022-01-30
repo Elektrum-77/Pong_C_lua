@@ -1,6 +1,8 @@
-*.o
+# *.o
+# *.a
 main_c.*
 lua51.dll
 /Pong.love
+/main.lua
 
 
