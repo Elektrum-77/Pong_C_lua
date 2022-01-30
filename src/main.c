@@ -22,15 +22,6 @@ static Pad PAD1;
 static Pad PAD2;
 static Ball BALL;
 
-void IncPlayer1Score(void)
-{
-    Score_Increment(&SCORE1);
-}
-void IncPlayer2Score(void)
-{
-    Score_Increment(&SCORE2);
-}
-
 int InitGameLua(lua_State *L)
 {
 
